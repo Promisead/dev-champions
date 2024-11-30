@@ -11,7 +11,7 @@ const Dedicated = () => {
 
                     {/* COLUMN-1 */}
                     <div>
-                        <Image src="/images/dedicated/man.svg" alt="man-icon" width={416} height={530} className="mx-auto md:mx-0" />
+                        <Image src="/images/dedicated/man-dev.png" alt="man-icon" width={450} height={530} className="mx-auto md:mx-0" />
                     </div>
 
                     {/* COLUMN-2 */}
@@ -21,7 +21,7 @@ const Dedicated = () => {
                             Dedicated to help peoples design needs.
                         </h2>
                         <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">To take a trivial example, which of us ever undertakes laborious physical exercise.</p>
-                        <p className="text-2xl font-semibold mt-12 lg:ml-32 preline text-center lg:text-start"> Cathy Hills, CEO</p>
+                       <p className="text-2xl font-semibold mt-12 lg:ml-32 text-center lg:text-start ">Promise Champion, Snr. Dev.</p>
                     </div>
 
                 </div>

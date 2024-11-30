@@ -42,7 +42,7 @@ const footer = () => {
             <div className="flex items-center space-x-4">
               <Link href="/" className="flex items-center leading-9 mb-4 lg:mb-20">
                 <Image
-                  src="/logo/logo_web_white.png"
+                  src="/images/logo/logo_web_white.png"
                   alt="Logo"
                   width={60} // Adjust width as needed for responsive sizing
                   height={60}
