@@ -1,3 +1,10 @@
 node_modules
 /node_modules
 ./node_modules
+__MACOSX
+/__MACOSX
+./__MACOSX
+
+.next
+/.next
+./.next

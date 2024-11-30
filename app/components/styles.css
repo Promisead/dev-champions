@@ -1,0 +1,72 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header (Hero Section) */
+.hero {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero .cta-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero .btn.primary {
+    background: #ff7a18;
+    color: white;
+}
+.hero .btn.secondary {
+    background: #fff;
+    color: #ff7a18;
+    border: 1px solid #ff7a18;
+}
+
+/* Section Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.about, .services, .portfolio, .testimonials, .contact {
+    text-align: center;
+}
+.services .service-cards, .portfolio .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.service-cards .card, .portfolio-grid .portfolio-item {
+    flex: 1 1 calc(33% - 40px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer .social-links a {
+    color: #99f2c8;
+    text-decoration: none;
+    margin: 0 10px;
+}
