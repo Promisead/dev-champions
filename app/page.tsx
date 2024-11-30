@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from './components/Banner/index';
 import Aboutus from './components/Aboutus/index';
 import Dedicated from './components/Dedicated/index';
