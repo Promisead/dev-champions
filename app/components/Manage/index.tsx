@@ -4,87 +4,91 @@ import { Switch } from '@headlessui/react';
 import Image from 'next/image';
 
 
-const names = [
+ const names = [
+
     {
-        heading: "Startup",
-        price: 41,
-        user: 'per user, per month',
-        button: "Start My 15-day Trial",
-        profiles: '5 Social Profiles',
-        posts: '5 Scheduled Posts Per Profile',
-        templates: "400+ Templated",
-        view: "Calendar View",
-        support: '24/7 Support',
-        category: 'yearly'
-    },
-    {
-        heading: "Business",
+        heading: "Basic Software Development",
         price: 29,
         user: 'per user, per month',
-        button: "Start My 15-day Trial",
-        profiles: '10 Social Profiles',
-        posts: '5 Scheduled Posts Per Profile',
-        templates: "600+ Templated",
-        view: "Calendar View",
-        support: '24/7 VIP Support',
+        button: "Get Started",
+        profiles: 'Access to IT tutorials and resources',
+        posts: 'Basic software development tools',
+        templates: 'Email support',
+        view:   'Monthly performance reports',
+        support: 'Monthly performance reports',
         category: 'yearly'
     },
     {
-        heading: "Agency",
-        price: 139,
+        heading: "Professional Web Design",
+        price: 59,
         user: 'per user, per month',
-        button: "Start My 15-day Trial",
-        profiles: '100 Social Profiles',
-        posts: '100 Scheduled Posts Per Profile',
-        templates: "800+ Templated",
-        view: "Calendar View",
-        support: '24/7 VIP Support',
+        button: "Get Started",
+        profiles:  'All features in the Basic Plan',
+        posts: 'Advanced web design services',
+        templates:  'Custom design templates',
+        view: 'Priority email and chat support',
+        support:  'Weekly performance reports',
         category: 'yearly'
     },
     {
-        heading: "Agency",
-        price: 139,
-        user: 'per user, per yearly',
-        button: "Start My 15-day Trial",
-        profiles: '100 Social Profiles',
-        posts: '100 Scheduled Posts Per Profile',
-        templates: "800+ Templated",
-        view: "Calendar View",
-        support: '24/7 VIP Support',
+        heading: "Enterprise IT Tutorials",
+        price: 99,
+        user: 'per user, per month',
+        button: "Get Started",
+        profiles:  'All features in the Professional Plan',
+        posts: 'Dedicated account manager',
+        templates:  'Comprehensive IT tutorials',
+        view:    'On-site training and consultation',
+        support: 'VIP Support',
+        category: 'yearly'
+    },
+    {
+        heading: "Advanced Data Science",
+        price: 79,
+        user: 'per user, per month',
+        button: "Get Started",
+        profiles:  'All features in the Professional Plan',
+        posts:   'Advanced data science solutions',
+        templates:   'AI-powered analytics',
+        view:  'Custom data models',
+        support:   'Priority email and chat support',
         category: 'monthly'
     },
     {
-        heading: "Startup",
-        price: 41,
-        user: 'per user, per yearly',
-        button: "Start My 15-day Trial",
-        profiles: '5 Social Profiles',
-        posts: '5 Scheduled Posts Per Profile',
+        heading: "AI Solutions",
+        price: 89,
+        user: 'per user, per month',
+        button: "Get Started",
+        profiles:'All features in the Professional Plan',
+        posts: 'Custom AI solutions',
         templates: "400+ Templated",
-        view: "Calendar View",
+        view:  'Machine learning models',
         support: '24/7 Support',
         category: 'monthly'
     },
     {
-        heading: "Business",
-        price: 29,
-        user: 'per user, per yearly',
-        button: "Start My 15-day Trial",
-        profiles: '10 Social Profiles',
-        posts: '5 Scheduled Posts Per Profile',
-        templates: "600+ Templated",
-        view: "Calendar View",
-        support: '24/7 VIP Support',
+        heading: "SEO Optimization",
+        price: 49,
+        user: 'per user, per month',
+        button: "Get Started",
+        profiles:   'SEO audits and reports',
+        posts:   'Keyword research',
+        templates: 'On-page optimization',
+        view: 'Link building strategies',
+        support:  'Monthly performance reports',
         category: 'monthly'
     },
 
 
-]
+] 
 
-const Manage = () => {
+  
     
-    const [enabled, setEnabled] = useState(false);
-    const [selectedCategory, setSelectedCategory] = useState('monthly');
+
+    const Manage = () => {
+    
+    const [enabled, setEnabled] = useState(true);
+    const [selectedCategory, setSelectedCategory] = useState('yearly');
 
     const toggleEnabled = () => {
         setEnabled(!enabled);
@@ -102,11 +106,11 @@ const Manage = () => {
                 <div className='md:flex md:justify-around mt-20'>
                     <div className='flex gap-5 justify-center md:justify-start'>
                         <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />
-                        <h4 className='text-lg font-semibold'>Free 15-day trial</h4>
+                        <h4 className='text-lg font-semibold'>Get Started with a Free Consultation</h4>
                     </div>
                     <div className='flex gap-5 justify-center md:justify-start'>
                         <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />
-                        <h4 className='text-lg font-semibold'>Unlimited Team Members</h4>
+                        <h4 className='text-lg font-semibold'>Start Your Journey with Us Today</h4>
                     </div>
                     <div className='flex gap-5 justify-center md:justify-start'>
                         <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />

@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap');
+ 
 
+ /* @import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap');
+ */
 /* TAILWIND CSS LINKS */
 @tailwind base;
 @tailwind components;

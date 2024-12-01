@@ -25,7 +25,7 @@ export default function Home() {
       <Dedicated />
       <Digital />
       <Beliefs />
-      <Wework />
+      <Wework/>
       <Ourteam />
       <Featured /> 
       <Manage />

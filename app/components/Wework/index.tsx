@@ -13,34 +13,35 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        profession: 'Tech Lead',
+        name: 'Promise AD',
+        imgSrc: '/images/wework/profile.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
+        profession: 'Tech Lead',
+        name: 'Promise AD',
+        imgSrc: '/images/wework/man.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
+        profession: 'Tech Lead',
+        name: 'Promise AD',
+        imgSrc: '/images/wework/woman.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        profession: 'Tech Lead',
+        name: 'Promise AD',
+        imgSrc: '/images/wework/man.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
+        profession: 'Tech Lead',
+        name: 'Promise AD',
+        imgSrc: '/images/wework/profile.png',
     },
+    
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
+        profession: 'Tech Lead',
+        name: 'Promise AD',
+        imgSrc: '/images/wework/woman.png',
     },
 ]
 
@@ -99,9 +100,8 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">We work in several verticals.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-50 lg:mr-48 my-2">We work in several verticals.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-25 lg:-mr-32 my-2">We work in several verticals.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">We enable businesses to leverage <br/>cutting-edge technologies.</h3>
+                      
                     </div>
 
                 </div>
