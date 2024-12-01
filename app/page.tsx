@@ -19,7 +19,7 @@ import {HoverBorderGradientDemo} from './components/Test'
 
 export default function Home() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <Banner />
       <Aboutus />
       <Dedicated />
