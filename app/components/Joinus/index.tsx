@@ -17,7 +17,7 @@ const Join = () => {
           </p>
         </div>
 
-        <div className="mx-auto max-w-4xl pt-5">
+        <div className="mx-10 max-w-4xl pt-5">
           <div className="sm:flex items-center mx-5 p-5 sm:p-0 rounded-xl justify-between bg-lightgrey sm:rounded-full">
             <div>
               <input
