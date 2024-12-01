@@ -13,44 +13,46 @@ interface DataType {
     name: string;
 }
 
-const postData: DataType[] = [
+const postData: DataType[] = 
+[
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
+      name: "King Victor",
+      profession: 'CEO, King Victors Ent.',
+      comment: 'Dev Champions transformed our online presence with their innovative web design. Highly recommend!',
+      imgSrc: '/images/wework/man.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
+      name: "Lister Mwewah",
+      profession: 'CEO, Parkview Int.Ltd',
+      comment: 'Their data analytics solutions provided us with invaluable insights. Exceptional service. Highly recommend!',
+      imgSrc: '/images/wework/woman.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
+      name: "David R.",
+      profession: 'CEO, Retail Ventures.',
+      comment: 'The AI-driven applications developed by Dev Champions exceeded our expectations. Outstanding work!',
+      imgSrc: '/images/wework/profile.png',
     },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
+      name: "John K.",
+      profession: 'CEO, Innovatech.Ltd',
+      comment: 'Professional and efficient, their e-commerce platform development boosted our sales significantly.',
+      imgSrc: '/images/wework/man2.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
+      name: "Sarah L",
+      profession: 'Manager, Tech Solutions Inc.',
+      comment: "Dev Champions' web design services are top-notch. Our site looks amazing! Thankns so much.",
+      imgSrc: '/images/wework/woman2.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
+      name: "Mark T",
+      profession: 'Admin, Fintech Corp',
+      comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.',
+      imgSrc: '/images/wework/man3.png',
     },
-]
+  ]
+  
 
 // CAROUSEL SETTINGS
 

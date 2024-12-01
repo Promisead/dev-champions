@@ -11,7 +11,10 @@ const Beliefs = () => {
                     <h3 className="text-4xl sm:text-65xl font-bold text-white leading-snug mb-5 text-center sm:text-start">Honesty <span className="text-grey">and hard work are our beliefs.</span></h3>
                     <h5 className="text-offwhite pt-2 mb-5 text-center sm:text-start">To take a trivial example, which of us ever undertakes laborious physical exercise.</h5>
                     <div className="text-center sm:text-start">
+                        <a href="#">
                         <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">Get Started</button>
+
+                        </a>
                     </div>
                 </div>
 
@@ -22,7 +25,10 @@ const Beliefs = () => {
                     <h3 className="text-4xl sm:text-65xl font-bold text-black leading-snug mb-5 text-center sm:text-start"><span className="text-blue">Build</span> that great idea that you have.</h3>
                     <h5 className="bluish pt-2 mb-5 text-center sm:text-start">To take a trivial example, which of us ever undertakes laborious physical exercise.</h5>
                     <div className="text-center sm:text-start">
+                        <a href="#">
+
                         <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">Learn more</button>
+                        </a>
                     </div>
                 </div>
 

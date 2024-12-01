@@ -41,7 +41,7 @@ const Data = () => {
                         ))}
                         <div className="mt-4"></div>
                         <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
-                            Contact Us
+                        Book a call
                         </button>
                         {/* <Contactusform /> */}
                     </div>

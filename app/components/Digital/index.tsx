@@ -13,7 +13,13 @@ const Digital = () => {
                         <h3 className="text-lg font-normal text-white mb-5 tracking-widest text-center lg:text-start">WHO WE ARE</h3>
                         <h4 className="text-3xl sm:text-6xl font-bold text-white mb-8 leading-snug text-center lg:text-start">We are a digital <br /> agency that creates <br /> innovative software, web design, IT tutorials, data science, and AI solutions</h4>
                         <div className="text-center lg:text-start">
+                        <a 
+    href="https://calendly.com/thechampionsacademy101/30min" 
+    target="_blank" 
+    rel="noopener noreferrer"
+>
                             <button className="text-xl font-semibold text-white bg-btnblue py-4 px-12 hover:bg-hoblue rounded-full">Get started</button>
+                            </a>
                         </div>
                     </div>
 

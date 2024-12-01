@@ -18,29 +18,29 @@ const postData: DataType[] = [
         imgSrc: '/images/wework/profile.png',
     },
     {
-        profession: 'Tech Lead',
-        name: 'Promise AD',
+        profession: 'UI/UX Designer',
+        name: 'Blissful A.B',
         imgSrc: '/images/wework/man.png',
     },
     {
-        profession: 'Tech Lead',
-        name: 'Promise AD',
+        profession: 'Data Scientist',
+        name: 'George P.O',
         imgSrc: '/images/wework/woman.png',
     },
     {
-        profession: 'Tech Lead',
-        name: 'Promise AD',
+        profession: 'DevOps ',
+        name: 'Tolu S.E',
         imgSrc: '/images/wework/man.png',
     },
     {
-        profession: 'Tech Lead',
-        name: 'Promise AD',
+        profession: 'Full-Stack ',
+        name: 'Paul T.Y',
         imgSrc: '/images/wework/profile.png',
     },
     
     {
-        profession: 'Tech Lead',
-        name: 'Promise AD',
+        profession: 'Socials',
+        name: 'Glady M.O',
         imgSrc: '/images/wework/woman.png',
     },
 ]

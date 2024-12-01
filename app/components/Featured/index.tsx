@@ -12,21 +12,23 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        heading: 'Brand design for a computer brand.',
+        heading: 'Custom web design.',
         imgSrc: '/images/featured/feat1.jpg',
     },
     {
-        heading: 'Mobile app 3d wallpaper.',
+        heading: 'E-commerce platform development.',
         imgSrc: '/images/featured/feat2.jpg',
     },
     {
-        heading: 'Brand design for a computer brand.',
+        heading: 'Data analytics services.',
         imgSrc: '/images/featured/feat1.jpg',
     },
     {
-        heading: 'Mobile app 3d wallpaper.',
+        heading: 'AI-driven app development.',
         imgSrc: '/images/featured/feat2.jpg',
     }
+    
+    
 ]
 
 // CAROUSEL SETTINGS
