@@ -13,15 +13,15 @@ interface DataType {
 const postData: DataType[] = [
     {
         heading: 'Custom web design.',
-        imgSrc: '/images/featured/feat1.jpg',
+        imgSrc: '/images/featured/web-design.jpg',
     },
     {
         heading: 'E-commerce platform development.',
-        imgSrc: '/images/featured/feat2.jpg',
+        imgSrc: '/images/featured/ecommerce.jpg',
     },
     {
         heading: 'Data analytics services.',
-        imgSrc: '/images/featured/feat1.jpg',
+        imgSrc: '/images/featured/feat3.jpg',
     },
     {
         heading: 'AI-driven app development.',

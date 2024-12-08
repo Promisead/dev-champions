@@ -2,6 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Contactusform from "./Contactus";
 
+import { Dialog, Transition } from '@headlessui/react';
+import { Fragment, useState } from 'react';
+
+import Calendly from '../../meeting/calendly'
+
 interface NavigationItem {
     name: string;
     href: string;
@@ -9,20 +14,31 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About Us', href: '#aboutus-section', current: true },
-    { name: 'Services', href: '#services-section', current: false },
-    { name: 'FAQ', href: '#faq-section', current: false },
-    { name: 'Blog', href: '#blog-section', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
-]
+    { name: "About Us", href: "#aboutus-section", current: false },
+    { name: "Services", href: "#services-section", current: false },
+    { name: "Our Process", href: "#process", current: false },
+    { name: "Blog", href: "#blog-section", current: false },
+  /*  { name: "Testimonial", href: "#testimonial-section", current: false },
+   */];
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
 const Data = () => {
+    const [isOpen, setIsOpen] = React.useState(false);
+   
+    const closeModal = () => {
+        setIsOpen(false);
+    };
+
+    const openModal = () => {
+        setIsOpen(true);
+    };
+
     return (
-        <div className="rounded-md max-w-sm w-full mx-auto">
+      <>
+        <div className="rounded-md max-w-sm w-full mx-auto z-50">
             <div className="flex-1 space-y-4 py-1">
                 <div className="sm:block">
                     <div className="space-y-1 px-5 pt-2 pb-3">
@@ -40,7 +56,8 @@ const Data = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
-                        <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
+                       
+                        <button onClick={openModal} className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
                         Book a call
                         </button>
                         {/* <Contactusform /> */}
@@ -48,6 +65,42 @@ const Data = () => {
                 </div>
             </div>
         </div>
+
+<Transition appear show={isOpen} as={Fragment}>
+<Dialog as="div" className="relative z-50" onClose={closeModal}>
+    <Transition.Child
+        as={Fragment}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+    >
+        <div className="fixed inset-0 bg-black bg-opacity-25" />
+    </Transition.Child>
+
+    <div className="fixed inset-0 overflow-y-auto">
+        <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+            >
+                <Dialog.Panel className="md:w-[50%]  max-w-3xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                   
+                    <Calendly />
+                </Dialog.Panel>
+            </Transition.Child>
+        </div>
+    </div>
+</Dialog>
+</Transition>
+      </>
     );
 }
 

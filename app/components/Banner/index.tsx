@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
+import { Cover } from "@/components/ui/cover";
+
 
 const Banner = () => {
     return (
@@ -9,11 +12,14 @@ const Banner = () => {
 
                 <div className="mx-auto sm:mx-0">
                     <div className='py-3 text-center lg:text-start'>
-                        <button className='text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black'>DESIGN SOLUTION</button>
+                      <Cover>
+                         <button className='z-1 text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black'>DESIGN SOLUTION</button>
+                        </Cover> 
                     </div>
                     <div className="py-3 text-center lg:text-start">
-                        <h1 className='text-6xl lg:text-80xl font-bold text-darkpurple'>
-                        Solution to <br /> bring your <br /> ideas to life.
+                     
+                      <h1 className='text-6xl lg:text-80xl font-bold text-darkpurple'>
+                             Solution to <br /> bring your <br /> ideas to life.
                         </h1>
                     </div>
                     <div className='my-7 text-center lg:text-start'>

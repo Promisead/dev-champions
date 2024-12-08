@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@300;400;500;600;700;800;900&display=swap');
  
 
  /* @import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap');
@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 html:not([data-scroll="0"]) .navbar {
@@ -46,6 +46,7 @@ html {
 
 .navbar {
   border-bottom: 0.5px solid rgba(196, 196, 196, 0.75);
+  z-index: 10000;
   
 }
 

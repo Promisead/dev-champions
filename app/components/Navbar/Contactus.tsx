@@ -17,7 +17,7 @@ const Contactusform = () => {
 
     return (
         <>
-            <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
+            <div className="z-50 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
                 <div className='hidden lg:block'>
                     <button
                         type="button"

@@ -18,7 +18,7 @@ const Dedicated = () => {
                     <div className="relative">
                         <Image src="images/dedicated/comma.svg" alt="comma-image" width={200} height={106} className="absolute comma-pos hidden lg:block" />
                         <h2 className="text-4xl lg:text-65xl pt-4 font-bold sm:leading-tight mt-5 text-center lg:text-start">
-                            Dedicated to help peoples design needs.
+                            Dedicated to help people&apos;s design needs.
                         </h2>
                         <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">To take a trivial example, which of us ever undertakes laborious physical exercise.</p>
                        <p className="text-2xl font-semibold mt-12 lg:ml-32 text-center lg:text-start ">Promise Champion, Snr. Dev.</p>

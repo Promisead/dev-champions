@@ -17,10 +17,10 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: "About Us", href: "#aboutus-section", current: false },
   { name: "Services", href: "#services-section", current: false },
-  { name: "FAQ", href: "#faq-section", current: false },
+  { name: "Our Process", href: "#process", current: false },
   { name: "Blog", href: "#blog-section", current: false },
-  { name: "Testimonial", href: "#testimonial-section", current: false },
-];
+/*  { name: "Testimonial", href: "#testimonial-section", current: false },
+ */];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -30,9 +30,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Disclosure as="nav" className="navbar">
+    <Disclosure as="nav" className="navbar z-50">
       <>
-        <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
+        <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8 z-50">
           <div className="relative flex h-12 sm:h-20 items-center">
             <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
