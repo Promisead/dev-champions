@@ -11,6 +11,10 @@ __MACOSX
 dev_champions_backup.zip
 ./dev_champions_backup.zip
 /dev_champions_backup.zip
+dev_champions_early_backup.zip
+./dev_champions_early_backup.zip
+/dev_champions_early_backup.zip
+../dev_champions_early_backup.zip
 
 production_files
 ./production_files
