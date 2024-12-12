@@ -16,7 +16,7 @@ const Circle = forwardRef<
       ref={ref}
       className={cn(
         "z-9 flex size-12 items-center justify-center rounded-full border-2 border-border  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-        className,
+        className
       )}
     >
       {children}
@@ -43,25 +43,25 @@ export function AnimatedBeamMultipleOutputDemo({
   return (
     <div
       className={cn(
-        "relative h-auto flex xl:h-auto w-full items-center justify-center overflow-hidden  p-10 ",
-        className,
+        "relative  flex xl:h-[500px] w-full items-center justify-center overflow-hidden p-10",
+        className
       )}
       ref={containerRef}
     >
-      <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
-        <div className="flex flex-col  gap-2">
+      <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg ">
+        <div className="flex flex-col justify-center gap-2">
           <Circle ref={div1Ref}>
             <Icons.googleDrive />
           </Circle>
-          <Circle ref={div2Ref}>
+         {/*  <Circle ref={div2Ref}>
             <Icons.googleDocs />
-          </Circle>
+          </Circle> */}
           <Circle ref={div3Ref}>
-          <Image
+            <Image
               src={"/logo/figma.png"}
-              width={10000}
-              height={10000}
-              className="w-20 h-20"
+              width={80}
+              height={80}
+              className="w-24 h-24"
               alt="image"
             />
           </Circle>
@@ -74,13 +74,12 @@ export function AnimatedBeamMultipleOutputDemo({
         </div>
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16 bg-white">
-          <Image
-          src={'/logo/logo_web.png'}
-          height={1000}
-          width={1000}
-          className="w-24 h-24"
-          alt="logo"
-          />
+            <Image
+              src={"/logo/logo_web.png"}
+              width={96}
+              height={96}
+              alt="logo"
+            />
           </Circle>
         </div>
         <div className="flex flex-col justify-center">

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
 import { Cover } from "@/components/ui/cover";
 
-
 const Banner = () => {
     return (
         <div className='mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8'>
@@ -28,11 +27,10 @@ const Banner = () => {
     target="_blank" 
     rel="noopener noreferrer"
 >
-    <button 
-        className='text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue'
+<button className='text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue'
     >
         Get Started
-    </button>
+        </button>
 </a>
 
                     </div>
