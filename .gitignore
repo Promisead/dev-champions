@@ -30,3 +30,8 @@ out
 
 
 .next
+
+
+.env.local
+/.env.local
+./.env.local
