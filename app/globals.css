@@ -392,10 +392,17 @@ html {
 .manage > div:nth-child(2) button {
   color: #ffffff;
 }
+.manage > div:nth-child(2) p {
+  color: #ffffff;
+}
+.manage > div:nth-child(2) hr {
+  color: #ffffff !important;
+}
 
 .manage > div:nth-child(2) h3 {
-  color: #747474;
+  color:  #ffffff;
 }
+
 
 
 /* Hide scrollbar for Chrome, Safari, and Opera --All*/

@@ -8,7 +8,7 @@ const Insta = () => {
             <div className=" mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 
                 <div className="mx-auto imageContainer">
-                    <Image src="/images/insta/insta1.png" width={306} height={306} alt="instaOne" />
+                    <Image src="/images/insta/insta1.png" width={306} height={306} alt="instaOne" unoptimized/>
                     <Link href={"https://www.instagram.com/promisedukeac"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
@@ -17,13 +17,13 @@ const Insta = () => {
                                 right: "45%",
                             }}
                         >
-                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} />
+                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} unoptimized/>
                         </button>
                     </Link>
                 </div>
 
                 <div className="mx-auto imageContainer">
-                    <Image src="/images/insta/insta2.png" width={306} height={306} alt="instaTwo" />
+                    <Image src="/images/insta/insta2.png" width={306} height={306} alt="instaTwo" unoptimized/>
                     <Link href={"https://www.instagram.com/promisedukeac"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
@@ -32,13 +32,13 @@ const Insta = () => {
                                 right: "45%",
                             }}
                         >
-                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} />
+                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} unoptimized/>
                         </button>
                     </Link>
                 </div>
 
                 <div className="mx-auto imageContainer">
-                    <Image src="/images/insta/insta3.png" width={306} height={306} alt="instaThree" />
+                    <Image src="/images/insta/insta3.png" width={306} height={306} alt="instaThree" unoptimized/>
                     <Link href={"https://www.instagram.com/promisedukeac"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
@@ -47,13 +47,13 @@ const Insta = () => {
                                 right: "45%",
                             }}
                         >
-                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} />
+                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} unoptimized/>
                         </button>
                     </Link>
                 </div>
 
                 <div className="mx-auto imageContainer">
-                    <Image src="/images/insta/insta4.png" width={306} height={306} alt="instaFour" />
+                    <Image src="/images/insta/insta4.png" width={306} height={306} alt="instaFour" unoptimized/>
                     <Link href={"https://www.instagram.com/promisedukeac"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
@@ -62,7 +62,7 @@ const Insta = () => {
                                 right: "45%",
                             }}
                         >
-                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} />
+                            <Image src="/images/insta/instagram.svg" alt="instagram" width={36} height={36} unoptimized/>
                         </button>
                     </Link>
                 </div>

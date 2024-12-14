@@ -15,7 +15,7 @@ const Circle = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "z-9 flex size-12  mx-auto  rounded-full border-2 border-border  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+        "z-9  flex size-12  mx-auto  rounded-full border-2 border-border  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
         className
       )}
     >
@@ -43,7 +43,7 @@ export function AnimatedBeamMultipleOutputDemo({
   return (
     <div
       className={cn(
-        "relative  flex xl:h-[500px] w-full  overflow-hidden py-10",
+        "relative ml-20 md:ml-0 flex xl:h-[600px] w-full  overflow-hidden py-10",
         className
       )}
       ref={containerRef}
@@ -53,16 +53,17 @@ export function AnimatedBeamMultipleOutputDemo({
           <Circle ref={div1Ref}>
             <Icons.googleDrive />
           </Circle>
-          {/*  <Circle ref={div2Ref}>
+            <Circle ref={div2Ref}>
             <Icons.googleDocs />
-          </Circle> */}
+          </Circle> 
           <Circle ref={div3Ref}>
             <Image
               src={"/logo/figma.png"}
               width={80}
               height={80}
-              className="w-24 h-24"
+              className="w-8 h-8"
               alt="image"
+              unoptimized
             />
           </Circle>
           <Circle ref={div4Ref}>
@@ -73,12 +74,14 @@ export function AnimatedBeamMultipleOutputDemo({
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16 bg-white">
+          <Circle ref={div6Ref} className="size-16 bg-white ml-6">
             <Image
               src={"/logo/logo_web.png"}
               width={96}
               height={96}
               alt="logo"
+              unoptimized
+              className="w-8 h-8"
             />
           </Circle>
         </div>
@@ -126,8 +129,8 @@ export function AnimatedBeamMultipleOutputDemo({
 const Icons = {
   notion: () => (
     <svg
-      width="100"
-      height="100"
+      width="32"
+      height="32"
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -146,8 +149,8 @@ const Icons = {
   ),
   whatsapp: () => (
     <svg
-      width="100"
-      height="100"
+      width="32"
+      height="32"
       viewBox="0 0 175.216 175.552"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -201,8 +204,8 @@ const Icons = {
 
   googleDrive: () => (
     <svg
-      width="100"
-      height="100"
+      width="32"
+      height="32"
       viewBox="0 0 87.3 78"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -235,8 +238,8 @@ const Icons = {
 
   googleDocs: () => (
     <svg
-      width="47px"
-      height="65px"
+      width="32"
+      height="32"
       viewBox="0 0 47 65"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -417,8 +420,8 @@ const Icons = {
   ),
   zapier: () => (
     <svg
-      width="105"
-      height="28"
+      width="32"
+      height="32"
       viewBox="0 0 244 66"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -456,8 +459,8 @@ const Icons = {
   ),
   messenger: () => (
     <svg
-      width="100"
-      height="100"
+      width="32"
+      height="32"
       viewBox="0 0 48 48"
       xmlns="http://www.w3.org/2000/svg"
     >

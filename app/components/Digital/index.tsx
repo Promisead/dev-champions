@@ -37,6 +37,7 @@ const Digital = () => {
                 alt="girldoodle"
                 width={815}
                 height={691}
+                unoptimized
               />
             </div>
           </div>

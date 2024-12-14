@@ -46,6 +46,7 @@ const Footer = () => {
                   width={60} // Adjust width as needed for responsive sizing
                   height={60}
                   className="w-18 h-18" // Ensures logo scales on smaller screens
+                  unoptimized
                 />
                 <h3 className="text-white text-3xl font-semibold leading-9 mx-4">
                   Dev Champions
@@ -61,6 +62,7 @@ const Footer = () => {
                     alt="facebook"
                     width={15}
                     height={20}
+                    unoptimized
                   />
                 </Link>
               </div>
@@ -71,6 +73,7 @@ const Footer = () => {
                     alt="whatsapp"
                     width={20}
                     height={20}
+                    unoptimized
                   />
                 </Link>
               </div>
@@ -82,6 +85,7 @@ const Footer = () => {
                     alt="instagram"
                     width={20}
                     height={20}
+                    unoptimized
                   />
                 </Link>
               </div>

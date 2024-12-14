@@ -53,6 +53,7 @@ export function BlurFadeDemo() {
        
                 src={imageUrl}
                 alt={`Random stock image ${idx + 1}`}
+                unoptimized
               />
               <h3 className="text-lg font-semibold p-4">{title}</h3>
             </Link>

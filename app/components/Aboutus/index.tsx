@@ -37,7 +37,7 @@ const Aboutus = () => {
         <div id="aboutus-section">
             <div className='mx-auto max-w-7xl px-4 py-24 my-32 lg:px-10 bg-lightgrey rounded-3xl relative'>
                 
-                <Image src="/images/aboutus/dots.svg" width={100} height={100} alt="dots-image" className="absolute bottom-1 -left-20" />
+                <Image src="/images/aboutus/dots.svg" width={100} height={100} alt="dots-image" className="absolute bottom-1 -left-20" unoptimized/>
                 <h3 className='text-center text-blue text-lg tracking-widest py-3'>ABOUT US</h3>
                 
             
@@ -53,7 +53,7 @@ const Aboutus = () => {
                         className='hover:bg-navyblue bg-white rounded-3xl mt-16 pt-10 pl-8 pb-10 pr-6 shadow-xl group'>
                             <h4 className='text-4xl font-semibold  text-black mb-5 group-hover:text-white'>{item.heading}
                             </h4>
-                            <Image src={item.imgSrc} alt={item.imgSrc} width={100} height={100} className="mb-5" />
+                            <Image src={item.imgSrc} alt={item.imgSrc} width={100} height={100} className="mb-5"  unoptimized/>
                             <h4 className='text-lg font-normal text-black group-hover:text-offwhite mb-5'>{item.paragraph}
                             </h4>
                             <Link href="#" className='text-lg font-semibold group-hover:text-white text-blue hover-underline'>

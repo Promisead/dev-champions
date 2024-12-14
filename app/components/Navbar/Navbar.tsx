@@ -45,6 +45,7 @@ const Navbar = () => {
                     width={40} // Adjust width as needed for responsive sizing
                     height={40}
                     className="w-10 h-10" // Tailwind sizing for better control on smaller screens
+                    unoptimized
                   />
                   <span className="ml-3 text-2xl sm:text-3xl font-semibold text-[#077998]">
                     Dev
