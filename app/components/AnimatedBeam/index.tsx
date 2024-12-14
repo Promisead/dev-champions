@@ -6,7 +6,7 @@ import { Link as ScrollLink, Element } from "react-scroll";
 const AnimatedBeam = () => {
   return (
     <div id="process">
-      <main className="md:px-0 md:mx-auto items-center justify-center ">
+      <main className="md:px-0 md:mx-auto items-center justify-center mx-auto">
         <h1 className="text-3xl md:text-5xl md:text-center font-medium flex flex-col md:flex-row items-center gap-x-2 mx-auto justify-center z-9">
           Our{" "}
           <span className="text-blue-500 flex gap-x-1 items-center">

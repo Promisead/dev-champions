@@ -43,7 +43,7 @@ export function AnimatedBeamMultipleOutputDemo({
   return (
     <div
       className={cn(
-        "relative ml-20 md:ml-0 flex xl:h-[600px] w-full  overflow-hidden py-10",
+        "relative ml-16 md:ml-0 flex xl:h-[600px] w-full  overflow-hidden py-16",
         className
       )}
       ref={containerRef}
@@ -74,7 +74,7 @@ export function AnimatedBeamMultipleOutputDemo({
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16 bg-white ml-6">
+          <Circle ref={div6Ref} className="size-16 bg-white ml-2">
             <Image
               src={"/logo/logo_web.png"}
               width={96}
