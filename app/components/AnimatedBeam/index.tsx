@@ -41,7 +41,7 @@ const AnimatedBeam = () => {
         </p>
         <div className="grid  grid-cols-1 md:grid-cols-2  justify-center items-center py-2 md:ml-60">
           {/* COLUMN-1 */}
-          <div className=" order-2 md:order-1 my-3 py-3">
+          <div className=" order-2 md:order-1">
             <AnimatedBeamMultipleOutputDemo />
           </div>
 

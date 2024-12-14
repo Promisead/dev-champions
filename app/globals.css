@@ -278,6 +278,7 @@ html {
   font-family: 'Dancing Script', cursive !important;
   transform: rotate(-10.06deg);
   text-align: center;
+  margin-left: 4px !important;
   margin-left: -340px;
 }
 

@@ -23,7 +23,7 @@ const Banner = () => {
                     </div>
                     <div className='my-7 text-center lg:text-start'>
                     <a 
-    href="https://calendly.com/thechampionsacademy101/30min" 
+    href="https://calendly.com/dev-champions-info/30min" 
     target="_blank" 
     rel="noopener noreferrer"
 >

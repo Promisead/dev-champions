@@ -179,7 +179,7 @@ const Manage = () => {
                 href="#"
                 onClick={() =>
                   window.open(
-                    "https://calendly.com/thechampionsacademy101/30min",
+                    "https://calendly.com/dev-champions-info/30min",
                     "_blank"
                   )
                 }
