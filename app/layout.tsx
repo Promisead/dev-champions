@@ -1,6 +1,9 @@
 import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
+import { Analytics } from "@vercel/analytics/react";
+import WhatsappLive from "./WhatsappLive";
+
 
 export const metadata = {
   title: 'Dev Champions',
@@ -22,6 +25,8 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Analytics />
+        <WhatsappLive/>
         <Footer />
       </body>
     </html>

@@ -34,7 +34,7 @@ const AnimatedBeam = () => {
   
       <p
         className="text-center 
-            py-4 md:w-1/2 mx-auto px-4
+            py-4 md:w-1/2 mx-auto px-4 
             text-xl md:text-2xl text-gray-500"
       >
         All of our services are designed to help your business to get noticed.
