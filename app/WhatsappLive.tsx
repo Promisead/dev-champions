@@ -7,8 +7,12 @@ const WhatsappLive = () => {
   const whatsappNumber = "+2349115034504";
   const baseUrl = "https://api.whatsapp.com/send/";
   const emailAddress = "info@dev-champions.tech";
-  const encodedMessage = `Hello, feel free to drop a mail here too (: :${emailAddress}`;
-  const whatsappLink = `${baseUrl}?phone=${whatsappNumber}&text=${encodedMessage}&type=phone_number&absent=0`;
+  const message = `Feel free to email us at ${emailAddress} too`;
+  const encodedMessage = encodeURIComponent(message); // Encode the message with the email address
+  const whatsappLink = `${baseUrl}?phone=${whatsappNumber}&text=${encodedMessage}`;
+  
+
+  
 
   useEffect(() => {
     const handleScroll = () => {
