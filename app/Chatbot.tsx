@@ -56,7 +56,7 @@ const Chatbot: React.FC = () => {
           alt="chatbot"
           width={50}
           height={50}
-          className="chatbot-icon "
+          className="chatbot-icon"
           
           unoptimized
         />
