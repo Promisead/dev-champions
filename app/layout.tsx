@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 import { Analytics } from "@vercel/analytics/react";
 import WhatsappLive from "./WhatsappLive";
+import Chatbot from './Chatbot';
 
 
 export const metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <WhatsappLive/>
+        <Chatbot/>
         <Footer />
       </body>
     </html>

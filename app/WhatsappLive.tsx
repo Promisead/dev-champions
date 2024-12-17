@@ -58,8 +58,8 @@ const WhatsappLive = () => {
         <Image
           src="/whatsapp_icon.png"
           alt="whatsapp"
-          width={50}
-          height={50}
+          width={60}
+          height={60}
           className="whatsapp-icon z-50"
           unoptimized
         />
