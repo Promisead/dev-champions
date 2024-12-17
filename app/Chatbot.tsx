@@ -69,7 +69,7 @@ const Chatbot: React.FC = () => {
         >
           <div className="bg-gradient-to-b from-purple-500 to-blue-500 p-4 rounded-lg shadow-lg w-80% md:w-[50%] max-w-lg relative">
             <button
-              className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full font-bold text-lg"
+              className="absolute top-2 right-2 bg-red-500 text-white p-4 rounded-full font-bold text-lg"
               onClick={() => setIsOpen(false)}
             >
               X
