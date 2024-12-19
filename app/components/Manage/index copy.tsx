@@ -1,8 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Switch } from "@headlessui/react";
 import Image from "next/image";
-import axios from "axios";
 
 const names = [
   {
@@ -82,60 +81,6 @@ const names = [
 const Manage = () => {
   const [enabled, setEnabled] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("yearly");
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [userData, setUserData] = useState({ email: "", description: "" });
-  const [selectedPlan, setSelectedPlan] = useState(null); // Store selected plan
-  const [exchangeRate, setExchangeRate] = useState(0); // Store the exchange rate
-
-  // Fetch the exchange rate on component mount
-  useEffect(() => {
-    const fetchExchangeRate = async () => {
-      try {
-        const response = await axios.get(
-          "https://api.exchangerate-api.com/v4/latest/USD" // Replace with your preferred API
-        );
-        setExchangeRate(response.data.rates.NGN); // Assuming NGN is the key for Naira
-      } catch (error) {
-        console.error("Error fetching exchange rate:", error);
-        setExchangeRate(750); // Fallback to a default rate (adjust as needed)
-      }
-    };
-
-    fetchExchangeRate();
-  }, []);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setUserData({ ...userData, [name]: value });
-  };
-
-  const handlePayment = async () => {
-    if (!selectedPlan) {
-      alert("Please select a plan first.");
-      return;
-    }
-
-    if (!exchangeRate) {
-      alert("Unable to fetch the exchange rate. Please try again later.");
-      return;
-    }
-
-    const amountInNaira = selectedPlan.price * exchangeRate; // Convert USD to NGN
-    const amountInKobo = Math.round(amountInNaira * 100); // Convert NGN to Kobo
-
-    try {
-      const response = await axios.post("/api/paystack", {
-        email: userData.email,
-        amount: amountInKobo,
-        description: userData.description,
-      });
-
-      const { authorization_url } = response.data.data;
-      window.location.href = authorization_url;
-    } catch (error) {
-      console.error("Payment error:", error);
-    }
-  };
 
   const toggleEnabled = () => {
     setEnabled(!enabled);
@@ -230,15 +175,19 @@ const Manage = () => {
               <p className="text-sm font-medium text-darkgrey mb-6">
                 {items.user}
               </p>
-              <button
-                onClick={() => {
-                  setSelectedPlan(items); // Store selected plan
-                  setIsModalOpen(true);
-                }}
-                className="text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6"
+              <a
+                href="#"
+                onClick={() =>
+                  window.open(
+                    "https://calendly.com/dev-champions-info/30min",
+                    "_blank"
+                  )
+                }
               >
-                {items.button}
-              </button>
+                <button className="text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6">
+                  {items.button}
+                </button>
+              </a>
               <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} />
               <h3 className="text-sm font-medium text-darkgrey mb-3 mt-6">
                 {items.profiles}
@@ -259,68 +208,6 @@ const Manage = () => {
           ))}
         </div>
       </div>
-
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-8 rounded-lg w-96">
-            <h2 className="text-xl font-bold mb-4">Payment Details</h2>
-            <p className="text-sm mb-4">
-              Current Exchange Rate: <strong>1 USD = {exchangeRate} NGN</strong>
-            </p>
-            <form>
-              <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={userData.email}
-                  onChange={handleInputChange}
-                  className="w-full p-2 border rounded"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">
-                  Description
-                </label>
-                <textarea
-                  name="description"
-                  value={userData.description}
-                  onChange={handleInputChange}
-                  className="w-full p-2 border rounded"
-                  placeholder="What are you paying for?"
-                  rows={3}
-                  cols={4}
-                  required
-                ></textarea>
-              </div>
-              <div className="flex justify-end gap-4">
-                <button
-                  type="button"
-                  onClick={() => setIsModalOpen(false)}
-                  className="px-4 py-2 text-sm text-gray-500 font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setIsModalOpen(false);
-                    handlePayment();
-                  }}
-                  className="px-4 py-2 text-sm text-white bg-blue border border-blue hover:bg-hoblue rounded-full"
-                >
-                  Pay Now
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

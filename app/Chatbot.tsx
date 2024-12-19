@@ -50,7 +50,7 @@ const Chatbot: React.FC = () => {
         onClick={() => setIsOpen(true)}
       >
         <span className="absolute left-[7px] top-[7px] -z-50 size-10">
-          <span className="flex size-full items-center justify-center animate-ping rounded-full opacity-75 bg-blue-500"></span>
+          <span className="flex size-full items-center justify-center animate-ping rounded-full opacity-75 "></span>
         </span>
         <Image
           src="/chatbot_icon.png"
