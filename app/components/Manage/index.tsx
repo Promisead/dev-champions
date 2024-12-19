@@ -84,7 +84,7 @@ const Manage = () => {
   const [selectedCategory, setSelectedCategory] = useState("yearly");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [userData, setUserData] = useState({ email: "", description: "" });
-  const [selectedPlan, setSelectedPlan] = useState(null); // Store selected plan
+  const [selectedPlan, setSelectedPlan] = useState<typeof names[number] | null>(null); // Store selected plan
   const [exchangeRate, setExchangeRate] = useState(0); // Store the exchange rate
 
   // Fetch the exchange rate on component mount
@@ -97,17 +97,18 @@ const Manage = () => {
         setExchangeRate(response.data.rates.NGN); // Assuming NGN is the key for Naira
       } catch (error) {
         console.error("Error fetching exchange rate:", error);
-        setExchangeRate(750); // Fallback to a default rate (adjust as needed)
+        setExchangeRate(1500); // Fallback to a default rate (adjust as needed)
       }
     };
 
     fetchExchangeRate();
   }, []);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
+  
 
   const handlePayment = async () => {
     if (!selectedPlan) {
