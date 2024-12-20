@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     const { email, amount } = await req.json();
 
     // Retrieve the Paystack secret key from environment variables
-    const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY;;
+    const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY;
 
     if (!PAYSTACK_SECRET_KEY) {
       throw new Error('Paystack secret key is not defined in environment variables');
