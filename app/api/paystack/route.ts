@@ -7,8 +7,8 @@ export async function POST(req: NextRequest) {
 
     // Retrieve the Paystack secret key from environment variables
     //const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY;
-    const PAYSTACK_SECRET_KEY = 'sk_live_477f9b910c296de798cebda9039cf9c2271cc099';
-    
+    const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY;
+
     if (!PAYSTACK_SECRET_KEY) {
       throw new Error('Paystack secret key is not defined in environment variables');
     }
