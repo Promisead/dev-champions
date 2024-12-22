@@ -1,4 +1,4 @@
-"use client";
+
 import { useEffect, useState } from "react";
 import { Switch } from "@headlessui/react";
 import Image from "next/image";
@@ -123,6 +123,10 @@ const Manage = () => {
 
     const amountInNaira = selectedPlan.price * exchangeRate; // Convert USD to NGN
     const amountInKobo = Math.round(amountInNaira * 100); // Convert NGN to Kobo
+
+ // Log email and description to console
+ console.log("User Email: ", userData.email);
+ console.log("User Description: ", userData.description);
 
     try {
       const response = await axios.post("/api/paystack", {
@@ -313,7 +317,7 @@ const Manage = () => {
                   type="button"
                   onClick={() => {
                     handlePayment();
-                    //setIsModalOpen(false);
+                    setIsModalOpen(false);
                   }}
                   className="px-4 py-2 text-sm text-white bg-blue border border-blue hover:bg-hoblue rounded-full"
                 >
