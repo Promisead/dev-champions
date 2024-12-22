@@ -130,6 +130,8 @@ const Manage = () => {
         amount: amountInKobo,
         description: userData.description,
       });
+      console.log("Request Body: --->", response); // Log the request body to verify
+
 
       const { authorization_url } = response.data.data;
       window.location.href = authorization_url;
@@ -310,8 +312,8 @@ const Manage = () => {
                 <button
                   type="button"
                   onClick={() => {
-                    setIsModalOpen(false);
                     handlePayment();
+                    //setIsModalOpen(false);
                   }}
                   className="px-4 py-2 text-sm text-white bg-blue border border-blue hover:bg-hoblue rounded-full"
                 >
