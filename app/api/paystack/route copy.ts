@@ -5,7 +5,6 @@ import https from 'https';
 interface RequestBody {
   email: string;
   amount: number;
-  description: string;
 }
 
 // Define the type for the Paystack response
@@ -17,7 +16,7 @@ interface PaystackResponse {
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
-    const { email, amount, description }: RequestBody = await req.json();
+    const { email, amount }: RequestBody = await req.json();
 
     // Retrieve the Paystack secret key from environment variables
     const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY;
@@ -29,7 +28,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const params = JSON.stringify({
       email,
       amount,
-      description,
     });
 
     const options = {
