@@ -83,7 +83,11 @@ const Manage = () => {
   const [enabled, setEnabled] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("yearly");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [userData, setUserData] = useState({ email: "", description: "" });
+  const [userData, setUserData] = useState({
+    email: "",
+    description: "",
+    amount: 0, // Add amount to userData
+  });
   const [selectedPlan, setSelectedPlan] = useState<typeof names[number] | null>(null); // Store selected plan
   const [exchangeRate, setExchangeRate] = useState(0); // Store the exchange rate
 
@@ -92,7 +96,7 @@ const Manage = () => {
     const fetchExchangeRate = async () => {
       try {
         const response = await axios.get(
-          "https://api.exchangerate-api.com/v4/latest/USD" // Replace with your preferred API
+          "https://api.exchangerate-api.com/v4/latest/USD" 
         );
         setExchangeRate(response.data.rates.NGN); // Assuming NGN is the key for Naira
       } catch (error) {
@@ -124,9 +128,15 @@ const Manage = () => {
     const amountInNaira = selectedPlan.price * exchangeRate; // Convert USD to NGN
     const amountInKobo = Math.round(amountInNaira * 100); // Convert NGN to Kobo
 
- // Log email and description to console
- console.log("User Email: ", userData.email);
- console.log("User Description: ", userData.description);
+ // Update amount in userData
+ setUserData((prevData) => ({
+  ...prevData,
+  amount: amountInKobo,
+}));
+
+console.log("User Email: ", userData.email);
+console.log("User Description: ", userData.description);
+console.log("Amount (in kobo): ", amountInKobo);
 
     try {
       const response = await axios.post("/api/paystack", {
@@ -313,14 +323,20 @@ const Manage = () => {
                 >
                   Cancel
                 </button>
-                <button
+               {/*  <button
                   type="button"
                   onClick={() => {
                     handlePayment();
                     setIsModalOpen(false);
                   }}
                   className="px-4 py-2 text-sm text-white bg-blue border border-blue hover:bg-hoblue rounded-full"
-                >
+                > */}
+                 <button
+    type="button"
+    onClick={handlePayment}
+    
+      className="px-4 py-2 text-sm text-white bg-blue border border-blue hover:bg-hoblue rounded-full"
+  >
                   Pay Now
                 </button>
               </div>
