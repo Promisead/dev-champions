@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.10",
-    "@types/react-slick": "^0.23.10"
+    "@types/react-slick": "^0.23.10",
+    "webpack": "^5.98.0"
   }
 }
