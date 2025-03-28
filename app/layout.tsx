@@ -22,6 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.jpg" type="image/x-icon" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        
       </head>
       <body>
         <Navbar />

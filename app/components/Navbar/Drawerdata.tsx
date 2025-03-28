@@ -18,6 +18,10 @@ const navigation: NavigationItem[] = [
     { name: "Services", href: "#services-section", current: false },
     { name: "Our Process", href: "#process", current: false },
     { name: "Blog", href: "#blog-section", current: false },
+    { name: "Forms", href: "/forms", current: false },
+    { name: "Jobs", href: "https://jobs.dev-champions.tech", current: false },
+    { name: "Blog", href: "http://blogs.dev-champions.tech", current: false },
+    
   /*  { name: "Testimonial", href: "#testimonial-section", current: false },
    */];
 

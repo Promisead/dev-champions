@@ -122,7 +122,7 @@ export default class MultipleItems extends Component {
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative'>
                                     <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="inline-block m-auto" unoptimized/>
 
-                                    <Link href="/">
+                                    <Link href="https://blogs.dev-champions.tech" target="_blank">
                                         <h3 className="absolute bg-blue text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full article-img">{items.time} read</h3>
                                     </Link>
                                     <h4 className='text-2xl font-bold pt-6 text-black'>{items.heading}</h4>

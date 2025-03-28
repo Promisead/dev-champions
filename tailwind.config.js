@@ -59,7 +59,17 @@ module.exports = {
       '65xl': ['65px', { lineHeight: '1' }],
       '80xl': ['80px', { lineHeight: '6rem' }],
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 30s linear infinite',
+      },
+    },
   },
-  plugins: [],
+  plugins: [], 
 }
