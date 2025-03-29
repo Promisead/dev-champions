@@ -57,7 +57,7 @@ const Footer = () => {
 <div className="overflow-hidden whitespace-nowrap mt-10">
   <div className="inline-block animate-marquee">
     <span className="text-lg font-bold px-4 text-white">
-      <span className="">Explore Our Blog posts:</span>{" "}
+      <span className="">Explore Our Blog posts on:</span>{" "}
       <span >AI Innovations</span>,{" "}
       <span >Data Science & Analytics</span>,{" "}
       <span >Digital Agency Success Stories</span>,{" "}
