@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import WhatsappLive from "./WhatsappLive";
 import Chatbot from './Chatbot';
 import Script from 'next/script';
@@ -54,7 +55,7 @@ export default function RootLayout({
               "url": "https://www.dev-champions.tech", // Update to your actual URL
               "logo": "https://www.dev-champions.tech/favicon.jpg",
               "sameAs": [
-                "https://www.linkedin.com/company/dev-champions",
+                "https://www.linkedin.com/company/dev-champions-i-t",
                 "https://www.twitter.com/dev_champions" // Add your real social links
               ],
               "description": "Active for all Software related activities"
@@ -83,6 +84,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Analytics />
+        <SpeedInsights />
         <WhatsappLive />
         <Chatbot />
         <Footer />
