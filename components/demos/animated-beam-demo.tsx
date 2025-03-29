@@ -76,7 +76,7 @@ export function AnimatedBeamMultipleOutputDemo({
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16 bg-white ml-2">
             <Image
-              src={"/logo/logo_web.png"}
+              src={"/logo/logo.png"}
               width={96}
               height={96}
               alt="logo"
