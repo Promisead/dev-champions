@@ -42,7 +42,7 @@ const Navbar = () => {
               <div className="flex items-center space-x-4">
                 <Link href="/" className="flex items-center">
                   <Image
-                    src="/images/logo/logo.png"
+                    src="/images/logo/logo_web.png"
                     alt="Logo"
                     width={40} // Adjust width as needed for responsive sizing
                     height={40}
