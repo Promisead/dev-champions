@@ -3,15 +3,15 @@ import type { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://dev-champions.tech/',
+      url: 'https://www.dev-champions.tech/',
       lastModified: new Date(),
     },
     {
-      url: 'https://dev-champions.tech#services-section',
+      url: 'https://www.dev-champions.tech#services-section',
       lastModified: new Date(),
     },
     {
-      url: 'https://dev-champions.tech#aboutus-section',
+      url: 'https://www.dev-champions.tech#aboutus-section',
       lastModified: new Date(),
     },
     {
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://dev-champions.tech/forms',
+      url: 'https://www.dev-champions.tech/forms',
       lastModified: new Date(),
     },
     // Add more routes as needed
