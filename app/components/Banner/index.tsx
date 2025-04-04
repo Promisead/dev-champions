@@ -4,7 +4,7 @@ import { Cover } from "@/components/ui/cover";
 
 const Banner = () => {
     return (
-        <div className='mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8'>
+        <div className='mx-auto max-w-7xl my-5 sm:py-10 px-6 lg:px-8'>
             <div className='grid grid-cols-1 lg:grid-cols-2 my-16'>
 
                  {/* COLUMN-1 */}
