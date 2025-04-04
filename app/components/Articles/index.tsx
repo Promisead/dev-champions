@@ -19,14 +19,14 @@ const postData: DataType[] = [
     {
       time: "5 min",
       heading: 'Dev Champions Launch New AI Solutions',
-      heading2: 'Innovative Tech for Businesses',
+      heading2: 'Innovative Tech for All Businesses',
       name: "Published on Dev Champions Blog",
       date: 'August 19, 2024',
       imgSrc: '/images/articles/article.png',
     },
     {
       time: "5 min",
-      heading: 'Dev Champions Hosts Web Development Workshop',
+      heading: 'Dev Champions Web Development Workshop',
       heading2: 'Empowering the Next Generation of Developers',
       name: "Published on Dev Champions Blog",
       date: 'August 19, 2024',
@@ -43,7 +43,7 @@ const postData: DataType[] = [
     {
       time: "5 min",
       heading: 'Dev Champions Launch New AI Solutions',
-      heading2: 'Innovative Tech for Businesses',
+      heading2: 'Innovative Tech for All Businesses',
       name: "Published on Dev Champions Blog",
       date: 'August 19, 2024',
       imgSrc: '/images/articles/article.png',
