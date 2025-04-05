@@ -4,8 +4,8 @@ import { Cover } from "@/components/ui/cover";
 
 const Banner = () => {
     return (
-        <div className='mx-auto max-w-7xl my-5 sm:py-10 px-6 lg:px-8'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 my-16'>
+        <div className='mx-auto max-w-7xl my-0 sm:py-10 px-6 lg:px-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 my-0'>
 
                  {/* COLUMN-1 */}
 
@@ -21,7 +21,7 @@ const Banner = () => {
                              Solution to <br /> bring your <br /> ideas to life.
                         </h1>
                     </div>
-                    <div className='my-7 text-center lg:text-start'>
+                    <div className='my-2 text-center lg:text-start'>
                     <a 
     href="https://calendly.com/dev-champions-info/30min" 
     target="_blank" 
