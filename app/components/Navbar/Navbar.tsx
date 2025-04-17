@@ -39,7 +39,8 @@ const Navbar = () => {
             <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
 
-              <div className="flex items-center space-x-4">
+           {/* /   <div className="flex items-center space-x-4"> */}
+             <div className="flex flex-col items-center gap-4 rounded-lg max-md:px-12  shadow-3xl sm:flex-row sm:justify-between px-16">
                 <Link href="/" className="flex items-center">
                   <Image
                     src="/images/logo/logo_web.png"
@@ -53,7 +54,7 @@ const Navbar = () => {
                     Dev
                   </span>
                   <span className="ml-3 text-2xl sm:text-3xl font-semibold text-[#8A1D4F]">
-                    Champions
+                    Champions 
                   </span>
                 </Link>
               </div>

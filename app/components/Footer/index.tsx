@@ -16,7 +16,7 @@ const products: ProductType[] = [
       { name: "Home", href: "/" },
       { name: "Blog", href: "https://blogs.dev-champions.tech" }, // Updated Blog link
       { name: "Jobs", href: "https://jobs.dev-champions.tech" },
-      { name: "Contact", href: "https://api.whatsapp.com/send/?phone=+2349115034504&text=Feel%20free%20to%20email%20us%20at%20info%40dev-champions.tech%20too" },
+     
     ],
   },
   {
@@ -25,8 +25,7 @@ const products: ProductType[] = [
     link: [
       { name: "Design", href: "/" },
       { name: "Mockup", href: "/" },
-      { name: "View all", href: "/" },
-      { name: "Log In", href: "https://blogs.dev-champions.tech/login" },
+      { name: "LogIn", href: "https://blogs.dev-champions.tech/login" },
     ],
   },
   {
@@ -34,7 +33,6 @@ const products: ProductType[] = [
     section: "Pages",
     link: [
       { name: "404", href: "/" },
-      { name: "Instructions", href: "/" },
       { name: "License", href: "/" },
       { name: "Meeting", href: "/" },
     ],
@@ -45,6 +43,10 @@ const products: ProductType[] = [
     link: [
       { name: "Styleguide", href: "/" },
       { name: "Changelog", href: "/" },
+      {
+        name: "Contact",
+        href: "https://api.whatsapp.com/send/?phone=+2349115034504&text=Feel%20free%20to%20email%20us%20at%20info%40dev-champions.tech%20too",
+      },
     ],
   },
 ];
@@ -54,54 +56,59 @@ const Footer = () => {
     <div className="bg-black -mt-40 z-20" id="first-section">
       <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         {/* Marquee Section */}
-<div className="overflow-hidden whitespace-nowrap mt-10">
-  <div className="inline-block animate-marquee">
-    <span className="text-lg font-bold px-4 text-white">
-      <span className="">Explore Our Blog posts on:</span>{" "}
-      <span >AI Innovations</span>,{" "}
-      <span >Data Science & Analytics</span>,{" "}
-      <span >Digital Agency Success Stories</span>,{" "}
-      <span >E-commerce & Online Business</span>,{" "}
-      <span >Events & Community Initiatives</span>,{" "}
-      <span >Future of Technology</span>,{" "}
-      <span >Software Development</span>,{" "}
-      <span >Team Talks & Behind-the-Scenes</span>,{" "}
-      <span >Tech Tutorials & How-Tos</span>,{" "}
-      <span >UI/UX</span>,{" "}
-      <span >Web Design</span>, and{" "}
-      <span >Web3</span>. Discover expert insights and stay ahead with{" "}
-      <Link
-        href="https://dev-blogs.com"
-        className="text-[orange] underline"
-      >
-        Dev Blogs
-      </Link>{" "}
-      today!
-    </span>
-  </div>
-</div>
+        <div className="overflow-hidden whitespace-nowrap mt-10">
+          <div className="inline-block animate-marquee">
+            <span className="text-lg font-bold px-4 text-white">
+              <span className="">Explore Our Blog posts on:</span>{" "}
+              <span>AI Innovations</span>, <span>Data Science & Analytics</span>
+              , <span>Digital Agency Success Stories</span>,{" "}
+              <span>E-commerce & Online Business</span>,{" "}
+              <span>Events & Community Initiatives</span>,{" "}
+              <span>Future of Technology</span>,{" "}
+              <span>Software Development</span>,{" "}
+              <span>Team Talks & Behind-the-Scenes</span>,{" "}
+              <span>Tech Tutorials & How-Tos</span>, <span>UI/UX</span>,{" "}
+              <span>Web Design</span>, and <span>Web3</span>. Discover expert
+              insights and stay ahead with{" "}
+              <Link
+                href="https://dev-blogs.com"
+                className="text-[orange] underline"
+              >
+                Dev Blogs
+              </Link>{" "}
+              today!
+            </span>
+          </div>
+        </div>
+
+
+        
 
         <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
-          
           {/* COLUMN-1 */}
-          <div className="col-span-4">
-            <div className="flex items-center space-x-4">
-              <Link href="/" className="flex items-center leading-9 mb-4 lg:mb-20">
+          {/* <div className="col-span-4 sm:col-span-1 lg:col-span-4 "> */}
+          <div className="col-span-4 lg:mx-16">
+            {/* <div className="flex flex-col items-center gap-4 rounded-lg  max-sm:px-12 shadow-lg sm:flex-row sm:justify-between mb-10"> */}
+            <div className="flex items-center space-x-4 mb-10 max-md:px-12">
+              <Link
+                href="/"
+                className="flex items-center leading-9 mb-4 lg:mb-20"
+              >
                 <Image
                   src="/images/logo/logo_web_white.png"
                   alt="Logo"
-                  width={60}
-                  height={60}
+                  width={50}
+                  height={50}
                   className="w-18 h-18"
                   unoptimized
                 />
-                <h3 className="text-white text-3xl font-semibold leading-9 mx-4">
+                <h3 className="text-white text-xl font-semibold leading-9 mx-4">
                   Dev Champions
                 </h3>
               </Link>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-8 max-md:justify-center">
               <div className="footer-icons">
                 <Link href="https://facebook.com/DevChampions">
                   <Image
@@ -137,15 +144,15 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="mt-8 text-white">
+            <div className="mt-8 text-white max-md:text-center">
               <p>
-                Email:{" "}
+                Email:
                 <a href="mailto:info@dev-champions.tech" className="underline">
                   info@dev-champions.tech
                 </a>
               </p>
               <p>
-                Phone:{" "}
+                Phone:
                 <a href="tel:+2349115034504" className="underline">
                   +234 9115 034 504
                 </a>
@@ -155,8 +162,10 @@ const Footer = () => {
 
           {/* COLUMN-2/3 */}
           {products.map((product) => (
-            <div key={product.id} className="group relative col-span-2">
-              <p className="text-white text-xl font-extrabold mb-9">{product.section}</p>
+            <div key={product.id} className="group relative col-span-2  px-14 ">
+              <p className="text-white text-xl font-extrabold mb-9">
+                {product.section}
+              </p>
               <ul>
                 {product.link.map((item, index) => (
                   <li key={index} className="mb-5">
@@ -178,10 +187,17 @@ const Footer = () => {
       {/* All Rights Reserved */}
       <div className="mx-auto max-w-2xl lg:max-w-7xl">
         <div className="pt-5 pb-5 px-4 sm:px-6 lg:px-4 border-solid border-t border-footer">
-        <p className="text-white">
-        Loved our content? Leave us a review on
-        <Link href="https://g.page/dev-champions/review" className="text-[yellow] underline"> Google</Link>.
-      </p>
+          <p className="text-white">
+            Loved our content? Leave us a review on
+            <Link
+              href="https://g.page/dev-champions/review"
+              className="text-[yellow] underline"
+            >
+              {" "}
+              Google
+            </Link>
+            .
+          </p>
           <div className="mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8">
             <div>
               <h3 className="text-center md:text-start text-offwhite text-lg">

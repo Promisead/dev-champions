@@ -62,14 +62,14 @@ const Join = () => {
   const closeModal = () => setFeedback({ message: "", type: "" });
 
   return (
-    <div className="bg-joinus my-32">
+    <div className="bg-joinus my-32 ">
       <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8">
         <div className="text-center">
           <h3 className="text-blue text-lg font-normal tracking-widest">JOIN US</h3>
           <h2 className="text-4xl sm:text-6xl font-bold my-6 leading-10">
             Take your business to <br /> the new level.
           </h2>
-          <p className="text-lightblack text-base font-normal">
+          <p className="text-black text-base font-normal max-md:font-bold">
             Join us to elevate your business. <br />
             Our experts provide innovative solutions tailored to your unique needs.
           </p>

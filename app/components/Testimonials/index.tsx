@@ -48,7 +48,7 @@ const postData: DataType[] =
     {
       name: "Mark T",
       profession: 'Admin, Fintech Corp',
-      comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.',
+      comment: 'The AI-driven applications developed by Dev Champions exceeded our expectations. Outstanding work!',
       imgSrc: '/images/wework/man3.png',
     },
   ]
