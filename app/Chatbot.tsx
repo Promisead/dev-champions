@@ -80,7 +80,7 @@ const Chatbot: React.FC = () => {
               </div>
             )}
             <iframe
-              src="https://www.chatbase.co/chatbot-iframe/hOUr3PookT9pouUT1SthF"
+              src="https://www.chatbase.co/chatbot-iframe/1V0U49JttStMqdttKD062"
               width="100%"
               height="500px"
               frameBorder="0"
