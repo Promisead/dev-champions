@@ -10,7 +10,7 @@ const Forms: React.FC = () => {
   // Mapping of form IDs to their respective URLs
   const formUrls: { [key: string]: string } = {
     Lv100: "https://forms.gle/Z914aX9M2LxqHZn36",
-    Lv200: "https://forms.gle/Bb7WtcBM9Rc7Mr257",
+    Lv200: "https://docs.google.com/forms/d/e/1FAIpQLSdB63jWSJtJ8hTd73SBhdhvXZhIOY5_MUeCSY43MJCmfcp7Nw/viewform?usp=header",
     Lv300: "https://docs.google.com/forms/d/e/1FAIpQLScHjhmG0aERsAQjzVT4C8EvKyIFSL_HbXzipr8wYDllCWSDBA/viewform?usp=sharing&ouid=104933040910338569534",
     Lv400: "https://forms.gle/XW9o4MNfSEzMpc4v9",
     Others: "https://forms.gle/Xt3FMBVqkv7Tm5Kr6",
