@@ -9,10 +9,10 @@ const Forms: React.FC = () => {
 
   // Mapping of form IDs to their respective URLs
   const formUrls: { [key: string]: string } = {
-    Lv100: "https://docs.google.com/forms/d/e/1FAIpQLSc3afcieqMZwaGjHehEisGm7owZVXWcVtJs-11f5maqPmvCDw/viewform?embedded=true"
+    Lv100: "https://docs.google.com/forms/d/e/1FAIpQLSc3afcieqMZwaGjHehEisGm7owZVXWcVtJs-11f5maqPmvCDw/viewform?embedded=true",
     Lv200: "https://docs.google.com/forms/d/e/1FAIpQLSdB63jWSJtJ8hTd73SBhdhvXZhIOY5_MUeCSY43MJCmfcp7Nw/viewform?embedded=true",
     Lv300: "https://docs.google.com/forms/d/e/1FAIpQLScHjhmG0aERsAQjzVT4C8EvKyIFSL_HbXzipr8wYDllCWSDBA/viewform?embedded=true",
-    Lv400: "https://docs.google.com/forms/d/e/1FAIpQLSemuJbTMB6fnIhcY1nXqH0f0i7N--vO3UpI81Dee_X_s7OWeg/viewform?embedded=true"
+    Lv400: "https://docs.google.com/forms/d/e/1FAIpQLSemuJbTMB6fnIhcY1nXqH0f0i7N--vO3UpI81Dee_X_s7OWeg/viewform?embedded=true",
 
     Others: "https://forms.gle/Xt3FMBVqkv7Tm5Kr6",
   };
